@@ -201,7 +201,7 @@ sensor:
   #   lvgl.yaml → heating_lab_current_label, heating_current_arc
   # ===========================================================================
   - platform: homeassistant
-    entity_id: climate.office_radiator_thermostat
+    entity_id: climate.heizung_buro_vtherm
     id: heating_current_temperature
     attribute: current_temperature
     on_value:
@@ -250,7 +250,7 @@ sensor:
   #   lvgl.yaml → heating_lab_target_label, heating_target_arc
   # ===========================================================================
   - platform: homeassistant
-    entity_id: climate.office_radiator_thermostat
+    entity_id: climate.heizung_buro_vtherm
     id: heating_target_temperature
     attribute: temperature
     on_value:
@@ -307,7 +307,7 @@ text_sensor:
   #   lvgl.yaml → heating_lab_mode_label
   # ===========================================================================
   - platform: homeassistant
-    entity_id: climate.office_radiator_thermostat
+    entity_id: climate.heizung_buro_vtherm
     id: heating_hvac_action
     attribute: hvac_action
     on_value:
@@ -398,7 +398,7 @@ binary_sensor:
   # ===========================================================================
   - platform: homeassistant
     id: office_scene_evening
-    entity_id: switch.office_evening_stateful_scene
+    entity_id: switch.buro_gemutlich_stateful_scene
     trigger_on_initial_state: true
     on_state:
       then:
@@ -422,7 +422,7 @@ binary_sensor:
   # ===========================================================================
   - platform: homeassistant
     id: office_scene_dimmed
-    entity_id: switch.office_dimmed_stateful_scene
+    entity_id: switch.buro_hell_stateful_scene
     trigger_on_initial_state: true
     on_state:
       then:
@@ -446,7 +446,7 @@ binary_sensor:
   # ===========================================================================
   - platform: homeassistant
     id: office_scene_desk_call
-    entity_id: switch.office_calls_stateful_scene
+    entity_id: switch.schreibtisch_hell_stateful_scene
     trigger_on_initial_state: true
     on_state:
       then:

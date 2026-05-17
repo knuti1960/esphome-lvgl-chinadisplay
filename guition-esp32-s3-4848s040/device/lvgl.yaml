@@ -156,12 +156,12 @@ lvgl:
               - label:
                   align: bottom_left
                   id: office_scene_calls_label
-                  text: "Calls"
+                  text: "ST Hell"
             on_press:
               - homeassistant.service:
                   service: switch.toggle
                   data:
-                    entity_id: switch.office_calls_stateful_scene
+                    entity_id: switch.schreibtisch_hell_stateful_scene
 
         # =========================================================================
         # BUTTON: Evening Scene
@@ -195,12 +195,12 @@ lvgl:
               - label:
                   align: bottom_left
                   id: office_scene_evening_label
-                  text: "Evening"
+                  text: "Gemütlich"
             on_press:
               - homeassistant.service:
                   service: switch.toggle
                   data:
-                    entity_id: switch.office_evening_stateful_scene
+                    entity_id: switch.buro_gemutlich_stateful_scene
 
         # =========================================================================
         # BUTTON: Dimmed Scene
@@ -234,12 +234,12 @@ lvgl:
               - label:
                   align: bottom_left
                   id: office_scene_dimmed_label
-                  text: "Dimmed"
+                  text: "Hell"
             on_press:
               - homeassistant.service:
                   service: switch.toggle
                   data:
-                    entity_id: switch.office_dimmed_stateful_scene
+                    entity_id: switch.buro_hell_stateful_scene
 
         # =========================================================================
         # BUTTON: Blinds (Open Blind Controls Page)
